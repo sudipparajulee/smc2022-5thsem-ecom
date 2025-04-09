@@ -17,7 +17,19 @@
     <body class="font-sans antialiased">
         <div class="flex">
             <div class="bg-gray-100 shadow-md w-52 h-screen">
-                <h1 class="font-bold text-2xl text-center mt-5">LOGO</h1>
+                <img src="{{asset('logo.png')}}" alt="" class="w-36 mt-5 mx-auto">
+                <div class="mt-4 grid text-lg">
+                    <a href="" class="pl-4 hover:bg-gray-200 py-2 border-b">Dashboard</a>
+                    <a href="" class="pl-4 hover:bg-gray-200 py-2 border-b">Categories</a>
+                    <a href="" class="pl-4 hover:bg-gray-200 py-2 border-b">Products</a>
+                    <a href="" class="pl-4 hover:bg-gray-200 py-2 border-b">Orders</a>
+                    <a href="" class="pl-4 hover:bg-gray-200 py-2 border-b">Logout</a>
+                </div>
+            </div>
+            <div class="p-4 flex-1">
+                <h1 class="font-bold text-3xl">@yield('title')</h1>
+                <hr class="bg-red-600 h-1.5 mb-4">
+                @yield('content')
             </div>
         </div>
     </body>
