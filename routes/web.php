@@ -12,7 +12,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+//Category Routes
 Route::get('/category',[CategoryController::class, 'index'])->name('category.index');
+Route::get('/category/create',[CategoryController::class, 'create'])->name('category.create');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
