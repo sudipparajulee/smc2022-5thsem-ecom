@@ -9,7 +9,8 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        return view('category.index');
+        $categories = Category::orderBy('priority', 'asc')->get();
+        return view('category.index',compact('categories'));
     }
 
     public function create()
@@ -25,7 +26,7 @@ class CategoryController extends Controller
         ]);
 
         Category::create($data);
-        dd('created');
+        return redirect()->route('category.index');
     }
 
 }
