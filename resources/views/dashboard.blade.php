@@ -23,7 +23,7 @@ Dashboard
     </div>
     <div class="bg-blue-50 p-4 rounded-lg shadow-md">
         <h2 class="text-xl font-bold">Total Categories</h2>
-        <p class="text-3xl font-bold">30</p>
+        <p class="text-3xl font-bold">{{$totalcategories}}</p>
     </div>
     <div class="bg-red-50 p-4 rounded-lg shadow-md">
         <h2 class="text-xl font-bold">Total Sales</h2>
