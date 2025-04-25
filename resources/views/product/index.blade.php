@@ -2,7 +2,7 @@
 @section('title', 'Products')
 @section('content')
     <div class="flex justify-end my-4">
-        <a href="" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Add Product</a>
+        <a href="{{route('product.create')}}" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Add Product</a>
     </div>
     <table class="w-full">
         <tr class="bg-gray-200">
