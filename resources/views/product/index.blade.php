@@ -15,15 +15,19 @@
             <th class="p-3 border border-gray-300">Category</th>
             <th class="p-3 border border-gray-300">Action</th>
         </tr>
+        @foreach($products as $product)
         <tr class="text-center">
-            <td class="p-3 border">Image</td>
-            <td class="p-3 border">Product name</td>
-            <td class="p-3 border">Product description</td>
-            <td class="p-3 border">1000</td>
-            <td class="p-3 border">800</td>
-            <td class="p-3 border">5</td>
-            <td class="p-3 border">Electronics</td>
+            <td class="p-3 border">
+                <img src="{{asset('images/'.$product->photopath)}}" alt="" class="h-16">
+            </td>
+            <td class="p-3 border">{{$product->name}}</td>
+            <td class="p-3 border">{{$product->description}}</td>
+            <td class="p-3 border">{{$product->price}}</td>
+            <td class="p-3 border">{{$product->discounted_price}}</td>
+            <td class="p-3 border">{{$product->stock}}</td>
+            <td class="p-3 border">{{$product->category->name}}</td>
             <td class="p-3 border">Edit Delete</td>
         </tr>
+        @endforeach
     </table>
 @endsection
