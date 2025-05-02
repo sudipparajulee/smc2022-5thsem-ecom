@@ -21,7 +21,7 @@
                 <img src="{{asset('images/'.$product->photopath)}}" alt="" class="h-16">
             </td>
             <td class="p-3 border">{{$product->name}}</td>
-            <td class="p-3 border">{{$product->description}}</td>
+            <td class="p-3 border"><div class="h-16  overflow-auto">{{$product->description}}</div></td>
             <td class="p-3 border">{{$product->price}}</td>
             <td class="p-3 border">{{$product->discounted_price}}</td>
             <td class="p-3 border">{{$product->stock}}</td>

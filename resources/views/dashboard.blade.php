@@ -7,7 +7,7 @@ Dashboard
  <div class="grid grid-cols-3 gap-5">
     <div class="bg-blue-50 p-4 rounded-lg shadow-md">
         <h2 class="text-xl font-bold">Total Products</h2>
-        <p class="text-3xl font-bold">150</p>
+        <p class="text-3xl font-bold">{{$totalproducts}}</p>
     </div>
     <div class="bg-red-50 p-4 rounded-lg shadow-md">
         <h2 class="text-xl font-bold">Pending Orders</h2>
