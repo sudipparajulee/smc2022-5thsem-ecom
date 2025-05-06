@@ -8,6 +8,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',[PagesController::class,'home'])->name('home');
+Route::get('/categoryproducts/{catid}',[PagesController::class,'categoryprouducts'])->name('categoryproducts');
 
 Route::get('/dashboard', [DashboardController::class,'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 
