@@ -4,7 +4,7 @@
         <h1 class="font-bold text-xl border-l-4 pl-2 border-blue-500">Latest Products</h1>
         <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4 py-2">
             @foreach($latestproducts as $product)
-            <a href="" class="border rounded-lg shadow">
+            <a href="{{route('viewproduct',$product->id)}}" class="border rounded-lg shadow">
                 <img src="{{asset('images/'.$product->photopath)}}" alt="" class="w-full h-44 object-cover rounded-t-lg">
                 <div class="p-2">
                     <h2 class="font-bold">{{$product->name}}</h2>
